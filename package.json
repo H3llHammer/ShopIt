@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "dev": "export NODE_ENV=DEVELOPMENT || set NODE_ENV=DEVELOPMENT && nodemon server/server",
+    "prod": "export NODE_ENV=PRODUCTION || set NODE_ENV=PRODUCTION && nodemon server/server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/H3llHammer/ShopIt.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alberto Fuentes",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/H3llHammer/ShopIt/issues"
